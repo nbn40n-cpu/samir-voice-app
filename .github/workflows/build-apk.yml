@@ -17,10 +17,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Setup Flutter
+      - name: Setup Flutter ✅ الإصدار الصحيح والمتوافق
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.1'  # ✅ نسخة متوافقة تماماً مع ملفك
+          flutter-version: '3.24.5'
           channel: 'stable'
 
       - name: Install Dependencies
@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: samir-trainer-app-apk
-          path: build/app/outputs/flutter-apk/app-release.apk  # ✅ حذفت النقطة الزائدة
+          path: build/app/outputs/flutter-apk/app-release.apk
